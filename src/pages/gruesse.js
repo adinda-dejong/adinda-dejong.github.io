@@ -18,23 +18,25 @@ export default () => {
 
   return (
     <Layout title="Grüsse">
-      {!search && (
-        <div className="flex mb-4">
-          <div>{child.text}</div>
-        </div>
-      )}
-      {search && children.filter(c => c.search.toLowerCase().indexOf(search.toLowerCase()) !== -1).map((c, i) => (
-        <div key={i} className="flex mb-4">
-          <div>{c.text}</div>
-        </div>
-      ))}
-      <input
-        className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-        type="text"
-        value={search}
-        onChange={handleChange}
-        placeholder="Suche"
-      />
+      <div className="md:w-6/12 sm:w-full">
+        {!search && (
+          <div className="flex mb-4">
+            <div>{child.text}</div>
+          </div>
+        )}
+        {search && children.filter(c => c.search.toLowerCase().indexOf(search.toLowerCase()) !== -1).map((c, i) => (
+          <div key={i} className="flex mb-4">
+            <div>{c.text}</div>
+          </div>
+        ))}
+        <input
+          className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+          type="text"
+          value={search}
+          onChange={handleChange}
+          placeholder="Suche"
+        />
+      </div>
     </Layout>
   );
 }
