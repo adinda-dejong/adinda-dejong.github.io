@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 
 export default () => (
-  <Layout title="Kontact">
+  <Layout title="Kontakt">
     <section className="container mx-auto">
       <h2 className="contact-title">Schreibe mir eine E-Mail</h2>
       <form className="w-full max-w-lg" action="https://formspree.io/mknolgdg" method="POST" novalidate="novalidate">
