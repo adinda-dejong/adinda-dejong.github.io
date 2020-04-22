@@ -9,6 +9,7 @@ deploy:
   skip-cleanup: true
   github-token: "$GH_TOKEN"
   local_dir: public
+  target_branch: master
   keep-history: true
   on:
     branch: source
@@ -16,8 +17,6 @@ before_script:
 - yarn
 script:
 - yarn build
-after_success:
-- npx gh-pages -d public -b master
 env:
   global:
     secure: YDM98OUFvR8nw0pCi/1oTo3ymMH7x4ZTUpyEMFdnsWOTi3JUNShKdxYhSQsJPRoKtPTX5sNwjenL60ixwt3uBrYCoy84OVjAq2qDpvOofIGVgwT5R9ZSe996u8trr8s/yDidf4NUBLhmc+Es7iNUwuHIsWuLFSKDBPpwgz5E/qDXGa+J1h6qsxTluuJYJOPfdxzF/EMy6mu2fRG06jsm/dbtdD5P0MDURk6eNb7d2AP4lW0VVjmU8UMQn6QMlRAg8ZBoCDFsNzA+RLDqxfMMpf7kYW6f7qArJLi/n9mCyCQBxhgkReNbRlEFa695QIoaH84VZKZtnM/52RBII5Sbn7GymoyjGfqDIIG9z5yyY1uJvykI8GVoWKWBVKqzd+1mU0n/DCktmzFEnLI7q5neO1itPgzSSZtDCjhXRqHhUX2TD+1GEJ7q34h9p9Kcj9HNF1j5cKYjpvrLCK2emoEbqbAWLADzVyS1M+ANqAx1WLyUH0pePnFA573Sy9lHwa8uAxgJB58cog//qmSontfQjXwyyAHp4OISyGYF+71DExDokc04/FxfI7JYRu4yOx+yOGxHdz6N0tzTqIUzeGg81RT5Pqs+3ZSWYcmGAWvPWtP4/y34OVlrbkRKQOateuK3wvYHZlwYJEfr1uYdIfxrWIS/56PkM5KN4z1GYE2TwzQ=
