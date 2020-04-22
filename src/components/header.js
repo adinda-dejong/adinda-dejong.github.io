@@ -24,6 +24,9 @@ export function Header(props) {
             <Link className="no-underline block mt-4 sm:inline-block sm:mt-0 text-white mr-4 hover:text-pink-500" to="/ueber-mich/">
               Über mich
             </Link>
+            <Link className="no-underline block mt-4 sm:inline-block sm:mt-0 text-white mr-4 hover:text-pink-500" to="/schwimmen-zuhause/">
+              Schwimmen Zuhause
+            </Link>
             <Link className="no-underline block mt-4 sm:inline-block sm:mt-0 text-white mr-4 hover:text-pink-500" to="/kontakt/">
               Kontakt
             </Link>
